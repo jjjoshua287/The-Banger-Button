@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Banger Button</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!--Title Screen-->
+    <div class="flex-container" id="title">
+        <div><h1 style="font:50px black sans">The Banger Button</h1></div>
+        <div><button onclick="screenTransition('.flex-container', '.lore', 'block');">Play da Game</button></div>
+        <div><button onclick="screenTransition('.flex-container', '.credits', 'flex');">Credits</button></div>
+    </div>    
+    
+    <!--Credits-->
+    <div class="credits">
+        <h1 style="font: 50px black sans">Lead Developer: Josh Falzone</h1>
+        <button onclick="backToTitle()">Cool</button>
+    </div>
+    <!--Lore baby-->
+    <div class="lore">
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h3>Long Before time, a fabled legendary button appeared...</h3>
+            <h3>People assumed it naturally had powers for some unknown reasons.</h3>
+            <p><strong>The Button</strong> started giving off cosmic energy...</p>
+            <p>...that's when the people decided they needed to investigate it.</p>
+        </div>
+        <div id="conflict">
+            <h1>Conflict Arises</h1>
+            <h3><strong>The button's</strong> cosmic rays were overpowering the villagers trying to defeat it.</h3>
+            <p>They brought in heavy artillery in order to create it, however...</p>
+            <p>when they fired the 1st shot...<br></p>
+            <h2>A small <em>click</em> was heard.</h2>
+            <p>It sent out a shockwave and sound so devastating, the village ceased to exist in that instant</p>
+        </div>
+        <div id="Aftermath">
+            <h1>The Aftermath</h1>
+            <h3><strong>The Button</strong> had completly disintegrated the village.</h3>
+            <h4><strong>The button</strong> then left.</h4>
+            <button onclick="screenTransition('.lore', '.present', 'block');">Click Me to Advance</button>
+        </div>
+    </div>
+    <div class="present">
+        <div id="The Discovery">
+            <h1>Present Day</h1>
+            <h3>The button was discovered at the <em>Institute of Extreme Bangers</em></h3>
+            <h4>The scientists there worked with historians to understand <strong>The Button</strong></h4>
+        </div>
+        <div id="The Legend">
+            <h2>The Legend of <strong>The Button</strong></h2>
+            <p>The Historians pointed out an old legend correlating to a button</p>
+            <span><em>Legend Has it that 1 button was deemed so "banger"
+                      that it destroyed an entire civilization</em></span>
+            <h2>Your Part</h2>
+            <p>The scientists theorized if you pushed the button a certain amount of times...</p>
+            <p><br>It'd stop having the ability of being able to destroy civilization</p>
+            <button onclick="startGame();">Click Me to begin saving Humanity!</button>
+        </div>
+    </div>
+
+    <div class="buttonDiv">
+        <button id="theButton">Click Me!</button>
+    </div>
+    <div class="end">
+        <div class="victory">
+            <div><h1>Congratulations!</h1></div>
+            <div><h2>You have saved Humanity</h2></div>
+            <div><h3>Thank you for playing!</h3></div>
+            <div><h1 style="font: 50px mono"><br><br>Lead Developer: Josh Falzone</h1></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
