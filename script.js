@@ -20,6 +20,6 @@
         });
     }
     function checkForVictory(counter){
-        victoryCondition = 1000 //Number of clicks to win da game
+        victoryCondition = 1234 //Number of clicks to win da game
         return counter >= victoryCondition
     }
